@@ -58,8 +58,8 @@ step 2-0: Run the 4(four) scripts for LSTM WITH ATTTENTION pipeline in any seque
           	       pipeline_LSTM_ATTENTION_225F.ipynb
 
 step 2-1: SVM pipeline with short gesture plonged to 164 frames by uniformly duplicating frames. All 164 frame features are fed as input to SVM.
-          feture dimension 164x1629.
-          RUN: 
+          feture dimension 164x1629.   
+	  RUN: 
 	  
               		pipeline_SVM.ipynb
 	      		pipeline_SVM_POSE_HAND.ipynb
