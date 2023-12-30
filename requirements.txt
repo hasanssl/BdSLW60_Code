@@ -1,0 +1,21 @@
+# Machine Learning and Data Processing
+numpy
+scikit-learn
+fastdtw
+
+# Deep Learning
+tensorflow
+keras
+
+# Visualization
+matplotlib
+seaborn
+
+# OpenCV
+opencv-python
+
+# MediaPipe
+mediapipe
+
+# Other Libraries
+pandas
