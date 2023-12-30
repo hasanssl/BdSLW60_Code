@@ -46,20 +46,20 @@ step 2-0: Run the 4(four) scripts for LSTM WITH ATTTENTION pipeline in any seque
           The experiements are with all data but with different configurations.
             
              All 1629 features (Pose, Face and Hand Landmarks)
-                   Left Hand data Flipped:  Hand Landmarks horizontally flipped centering around the middle of two shoulders
+        	Left Hand data Flipped:  Hand Landmarks horizontally flipped centering around the middle of two shoulders
                        pipeline_LSTM_ATTENTION_1629F_LEFT_FLIPPED.ipynb
-                   NO FLIP: 
+                NO FLIP: 
                        pipeline_LSTM_ATTENTION_1629F.ipynb
                        
              225 features (Pose, and Hand Landmarks, NO FACE)
-                   Left Hand data Flipped:  Hand Landmarks horizontally flipped centering around the middle of two shoulders
+        	Left Hand data Flipped:  Hand Landmarks horizontally flipped centering around the middle of two shoulders
                        pipeline_LSTM_ATTENTION_225F_LEFT_FLIPPED.ipynb
-                   NO FLIP:  
+        	NO FLIP:  
           	       pipeline_LSTM_ATTENTION_225F.ipynb
 
 step 2-1: SVM pipeline with short gesture plonged to 164 frames by uniformly duplicating frames. All 164 frame features are fed as input to SVM.
-          feture dimension 164x1629
-          RUN 
+          feture dimension 164x1629.
+          RUN: 
 	  
               		pipeline_SVM.ipynb
 	      		pipeline_SVM_POSE_HAND.ipynb
