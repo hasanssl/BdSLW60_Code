@@ -59,13 +59,15 @@ step 2-0: Run the 4(four) scripts for LSTM WITH ATTTENTION pipeline in any seque
 step 2-1: SVM pipeline with short gesture plonged to 164 frames by uniformly duplicating frames. All 164 frame features are fed as input to SVM.
           feture dimension 164x1629
           RUN 
-              pipeline_SVM.ipynb
-	      pipeline_SVM_POSE_HAND.ipynb
+	  
+              		pipeline_SVM.ipynb
+	      		pipeline_SVM_POSE_HAND.ipynb
 	      
 step 2-2: SVM with DTW distances. No need to plong the gestures. Highly computationally intensive to calculate the distances.
           Run if you have performed step 0-1 and checked step 1-2.
           feature dimension still 60x1629
           RUN
+	  
               pipeline_SVM_DTW.ipynb
 	      pipeline_SVM_DTW_POSE_HAND.ipynb
               
