@@ -67,7 +67,7 @@ step 2-1: SVM pipeline with short gesture plonged to 164 frames by uniformly dup
 step 2-2: SVM with DTW distances. No need to plong the gestures. Highly computationally intensive to calculate the distances.
           Run if you have performed step 0-1 and checked step 1-2.
           feature dimension still 60x1629.
-          RUN:
+	  RUN:
 	  
               pipeline_SVM_DTW.ipynb
 	      pipeline_SVM_DTW_POSE_HAND.ipynb
