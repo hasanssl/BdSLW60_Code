@@ -3,6 +3,7 @@ Before You Jump In
 *****Assuming you downloaded the code from Github
 
 Dataset and Annotation
+
 step 0-0: download the BdSLW60 dataset from Kaggle. link: BdSLW60. 
           COPY/DOWNLOAD ALL THE CONTENTS IN BdSL60 FOLDER. You will first get the folder empty before copying.
        
