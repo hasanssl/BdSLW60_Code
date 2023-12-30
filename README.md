@@ -18,6 +18,7 @@ step 0-2: (Optional) If you have changed the dataset annotation and want to gene
           this will overwrite the default annotation json file provided with the dataset.
 
 Preprocesing
+
 step 1-0: (Optional) Something about DTW experiment. If you have performed step 0-1
 	  Edit the last cell of 'PREPROCESSING/RUN_THIS_CREATE_NUMPY.ipynb' and set the flag DTW_weights_available  to True
 	  
@@ -68,5 +69,5 @@ step 2-2: SVM with DTW distances. No need to plong the gestures. Highly computat
 	      pipeline_SVM_DTW_POSE_HAND.ipynb
               
               
-         MOST PROBABLY YOU ARE READING THIS LINE
-                     Thank You!
+MOST PROBABLY YOU ARE READING THIS LINE
+Thank You!
