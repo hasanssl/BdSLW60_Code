@@ -35,8 +35,9 @@ step 1-2: (Optional and discouraged) Run the script 'DTW Distance Calculation.ip
           
 step 1-3: (Optional) If you want to check the number of missing hand landmarks in the dataset. We wrote the code to justify the poorly classified
           classes/words.
-          RUN 
-              PREPROCESSING/missing_handpoint_count.ipynb
+          RUN: 
+	  
+             	PREPROCESSING/missing_handpoint_count.ipynb
               
               
 Machine Learning:
@@ -65,8 +66,8 @@ step 2-1: SVM pipeline with short gesture plonged to 164 frames by uniformly dup
 	      
 step 2-2: SVM with DTW distances. No need to plong the gestures. Highly computationally intensive to calculate the distances.
           Run if you have performed step 0-1 and checked step 1-2.
-          feature dimension still 60x1629
-          RUN
+          feature dimension still 60x1629.
+          RUN:
 	  
               pipeline_SVM_DTW.ipynb
 	      pipeline_SVM_DTW_POSE_HAND.ipynb
