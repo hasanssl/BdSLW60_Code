@@ -54,8 +54,10 @@ step 2-0: Run the 4(four) scripts for LSTM WITH ATTTENTION pipeline in any seque
              225 features (Pose, and Hand Landmarks, NO FACE)
         	Left Hand data Flipped:  Hand Landmarks horizontally flipped centering around the middle of two shoulders
                        pipeline_LSTM_225_FLIPPED_ST5_B64.ipynb
+		       pipeline_LSTM_225_FLIPPED_no_stop_B64.ipynb
         	NO FLIP:  
           	       pipeline_LSTM_225_ST5_B64.ipynb
+		       pipeline_LSTM_225_no_stop_B64.ipynb
 
 step 2-1: SVM pipeline with short gesture plonged to 164 frames by uniformly duplicating frames. All 164 frame features are fed as input to SVM.
           feture dimension 164x1629.   
