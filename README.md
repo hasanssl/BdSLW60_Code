@@ -34,7 +34,7 @@ step 1-2: (Optional and discouraged) Run the script 'DTW Distance Calculation.ip
           CAUTION: This is very computation intensive and takes more than 5 days with 60 computers calculating the distances for each class.
           
 step 1-3: (Optional) If you want to check the number of missing hand landmarks in the dataset. We wrote the code to justify the poorly classified
-          classes/words.
+          classes/words. The script also finds out number of right handed and left handed samples from each signer.
           RUN: 
 	  
              	PREPROCESSING/missing_handpoint_count.ipynb
@@ -47,15 +47,15 @@ step 2-0: Run the 4(four) scripts for LSTM WITH ATTTENTION pipeline in any seque
             
              All 1629 features (Pose, Face and Hand Landmarks)
         	Left Hand data Flipped:  Hand Landmarks horizontally flipped centering around the middle of two shoulders
-                       pipeline_LSTM_ATTENTION_1629F_LEFT_FLIPPED.ipynb
+                       pipeline_LSTM_1629_FLIPPED_ST5_B64.ipynb
                 NO FLIP: 
-                       pipeline_LSTM_ATTENTION_1629F.ipynb
+                       pipeline_LSTM_1629_ST5_B64.ipynb
                        
              225 features (Pose, and Hand Landmarks, NO FACE)
         	Left Hand data Flipped:  Hand Landmarks horizontally flipped centering around the middle of two shoulders
-                       pipeline_LSTM_ATTENTION_225F_LEFT_FLIPPED.ipynb
+                       pipeline_LSTM_225_FLIPPED_ST5_B64.ipynb
         	NO FLIP:  
-          	       pipeline_LSTM_ATTENTION_225F.ipynb
+          	       pipeline_LSTM_225_ST5_B64.ipynb
 
 step 2-1: SVM pipeline with short gesture plonged to 164 frames by uniformly duplicating frames. All 164 frame features are fed as input to SVM.
           feture dimension 164x1629.   
