@@ -27,14 +27,15 @@ step 1-1: run the 'PREPROCESSING/RUN_THIS_CREATE_NUMPY.ipynb'
           This will generate all the mediapipe landmarks and numpy files, and will generate normalized data.
           The first time run may take several hours (10 hours or more) because it will extract landmarks from videos.
           (Subsequent runs will take much less time as the landmark extractions will not be repeated)
+step 1-2: Wrote two scripts to translate the coordinates locally to wrist point and elbow  and so on. This allows local changes to be captured. We quantized them according to our heuristics (can be found in the second script)
+	  run PREPROCESSING_RQ/relativeCalibrated.ipynb and PREPROCESSING_RQ/relativeQuantize_D5MAX.ipynb
           
-step 1-2: (Optional and discouraged) Run the script 'DTW Distance Calculation.ipynb' available OUTSIDE PREPROCESSING folder.
+step 1-3: (Optional and discouraged) Run the script 'DTW Distance Calculation.ipynb' available OUTSIDE PREPROCESSING folder.
           You may do this if you changed data annotations and perfomed step 0-2. 
           
           CAUTION: This is very computation intensive and takes more than 5 days with 60 computers calculating the distances for each class.
           
-step 1-3: (Optional) If you want to check the number of missing hand landmarks in the dataset. We wrote the code to justify the poorly classified
-          classes/words. The script also finds out number of right handed and left handed samples from each signer.
+step 1-4: (Optional) If you want to check the number of missing hand landmarks in the dataset. The script also finds out number of right handed and left handed samples from each signer.
           RUN: 
 	  
              	PREPROCESSING/missing_handpoint_count.ipynb
