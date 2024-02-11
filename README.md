@@ -4,11 +4,11 @@ Before You Jump In
 
 Dataset and Annotation
 
-step 0-0: download the BdSLW60 dataset from Kaggle. link: BdSLW60. 
+step 0-0: download the BdSLW60 dataset from Kaggle. (https://www.kaggle.com/datasets/hasaniut/BdSLW60) 
           COPY/DOWNLOAD ALL THE CONTENTS IN BdSL60 FOLDER. You will first get the folder empty before copying.
        
-step 0-1: (Optional) If you want to run the DTW_SVM 'pipeline pipeline_SVM_DTW.ipynb':
-	  download the DTW_BdSLW60 dataset from Kaggle. link: DTW_BdSLW60 
+step 0-1: (Optional) If you want to run the DTW_SVM 'pipeline_SVM_DTW.ipynb':
+	  download the DTW_BdSLW60 dataset from Kaggle. (https://www.kaggle.com/datasets/hasaniut/DTW_BdSLW60) 
 	  Overwrite the DTW folder already there.
 	  
 step 0-2: (Optional) If you have changed the dataset annotation and want to generate JSON files again. 
@@ -33,7 +33,7 @@ step 1-2: Wrote two scripts to translate the coordinates locally to wrist point 
 step 1-3: (Optional and discouraged) Run the script 'DTW Distance Calculation.ipynb' available OUTSIDE PREPROCESSING folder.
           You may do this if you changed data annotations and perfomed step 0-2. 
           
-          CAUTION: This is very computation intensive and takes more than 5 days with 60 computers calculating the distances for each class.
+          CAUTION: This is very computation intensive and takes more than 5 days with 60 computers calculating the distances.
           
 step 1-4: (Optional) If you want to check the number of missing hand landmarks in the dataset. The script also finds out number of right handed and left handed samples from each signer.
           RUN: 
@@ -44,7 +44,7 @@ step 1-4: (Optional) If you want to check the number of missing hand landmarks i
 Machine Learning:
 
 step 2-0: Run the 4(four) scripts for LSTM WITH ATTTENTION pipeline in any sequence.
-          The experiements are with all data but with different configurations.
+          The experiements are with all sign instances but with different dataset configurations.
             
              All 1629 features (Pose, Face and Hand Landmarks)
         	Left Hand data Flipped:  Hand Landmarks horizontally flipped centering around the middle of two shoulders
